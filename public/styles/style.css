@@ -14,7 +14,7 @@ body {
 :root {
     --tamanho-header: 80px;
     --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login:calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-footer: 65px;
 }
 
@@ -128,4 +128,91 @@ body {
 
 .version {
     font-size: 12px;
+}
+
+.login  {
+    height: var(--tamanho-login);
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.card-login {
+    padding: 30px;
+    text-align: center;
+}
+
+.card {
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    color: hotpink;
+    width: 40%;
+    margin: auto;
+    padding: 10px 70px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    border-color: #32b9cd;
+}
+
+.botao{
+   color: white;
+   background-color: crimson;
+   border: none;
+   border-radius: 5px;
+   width: 23%;
+   height: 30px;
+   padding: 10px;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   display: flex; 
+   justify-content: center; 
+   align-items: center;
+   margin-bottom: 10px;
+   margin-top: 10px;
+  }
+
+.formulario .campo {
+    margin-bottom: 15px;
+    width: 100%;
+    
+}
+
+.formulario span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #32b9cd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #bbb;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+.login h2{
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
